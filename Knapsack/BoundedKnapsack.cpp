@@ -11,9 +11,19 @@ int solve(int iCapacity , int iNumberOfItems , int values[] , int weights[])
 {
   int Memory[iCapacity][iNumberOfItems];
 
-  
+  if( iCapacity == 0 || iNumberOfItems ==0 ) { return 0; }
 
-  return 0;
+  else if ( weights[iNumberOfItems-1] > iCapacity)
+  {
+    return solve(iCapacity, iNumberOfItems - 1 , values, weights);
+  }
+
+  else
+  {
+    return max(values[iNumberOfItems-1] + solve(iCapacity - weights[iNumberOfItems-1], iNumberOfItems - 1 , values, weights),
+            solve(iCapacity, iNumberOfItems - 1 , values, weights));
+  }
+
 }
 
 int main(int argc, char *argv[])
@@ -28,14 +38,14 @@ int main(int argc, char *argv[])
   }
   else
   {
-    iKnapsackCapacity = 10;
+    iKnapsackCapacity = 163;
     iNumberOfItems    = 5;
   }
 
-  int values[iNumberOfItems];
-  int weights[iNumberOfItems];
+  int values[iNumberOfItems]    = {5, 17, 16 , 90, 21};
+  int weights[iNumberOfItems]   = {10, 15, 60, 80, 23};
 
-  int solution = solve(iKnapsackCapacity, iNumberOfItems, values, weights);
+  std::cout<< solve(iKnapsackCapacity, iNumberOfItems, values, weights) <<std::endl;
 
 
 
