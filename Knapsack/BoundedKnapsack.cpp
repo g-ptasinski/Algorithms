@@ -35,19 +35,35 @@ int main(int argc, char *argv[])
   {
     iKnapsackCapacity = atoi(argv[1]);
     iNumberOfItems    = atoi(argv[2]);
+	
+	std::cout<< "Please input value of each item" <<std::endl;
+	
+	int values[iNumberOfItems];
+	int weights[iNumberOfItems];
+	
+	for(int i=0 ; i<iNumberOfItems ; i++)
+	{ 
+		std::cin>>values[i];
+	}
+	
+	std::cout<< "Please input weight of each item" <<std::endl;
+	
+	for(int i=0 ; i<iNumberOfItems ; i++)
+	{ 
+		std::cin>>weights[i];
+	}
+	
+	std::cout<< solve(iKnapsackCapacity, iNumberOfItems, values, weights) <<std::endl;
   }
   else
   {
     iKnapsackCapacity = 163;
     iNumberOfItems    = 5;
+	int values[iNumberOfItems]    = {5, 17, 16 , 90, 21};
+	int weights[iNumberOfItems]   = {10, 15, 60, 80, 23};
+	
+	 std::cout<< solve(iKnapsackCapacity, iNumberOfItems, values, weights) <<std::endl;
   }
-
-  int values[iNumberOfItems]    = {5, 17, 16 , 90, 21};
-  int weights[iNumberOfItems]   = {10, 15, 60, 80, 23};
-
-  std::cout<< solve(iKnapsackCapacity, iNumberOfItems, values, weights) <<std::endl;
-
-
 
   return 0;
 }
