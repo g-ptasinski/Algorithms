@@ -30,7 +30,6 @@ int main()
     int n       = sizeof(nums)/sizeof(nums[0]);
 
     printSubarraysBruteForce(nums, n);
-    //printSubarraysMultimap(nums, n);
 
     return 0;
 }
