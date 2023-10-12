@@ -1,14 +1,40 @@
 #include <stdio.h>
  
-
-// Linear time partition routine to sort an array containing 0, 1, and 2.
-// It is similar to 3–way partitioning for the Dutch national flag problem.
-void threeWayPartition(int A[], int end)
+void swap(int A[], int i, int j)
 {
-    
+    int temp = A[i];
+    A[i] = A[j];
+    A[j] = temp;
 }
- 
-void naiveSort(int A[], int end)
+
+//O(n) requires only one traversal
+void ThreeWayPartition(int A[], int end)
+{
+    int start   = 0;
+    int mid     = 0;
+    int pivot   = 1;
+    while(mid<=end)
+    {
+        if( A[mid] < pivot )
+        {
+            swap(A,start,mid);
+            start++;
+            mid++;
+        }
+        else if( A[mid] > pivot )
+        {
+            swap(A,mid,end);
+            end--;
+        }
+        else 
+        {
+            mid++;
+        }
+    }
+}
+
+//O(n), requires 2 traversals, linear time 
+void NaiveSort(int A[], int end)
 {
     int counter[]={0,0,0};
 
@@ -36,7 +62,6 @@ void naiveSort(int A[], int end)
         }
         else return;
     }
-
 }
 
 int main()
@@ -44,8 +69,8 @@ int main()
     int A[] = { 0, 1, 2, 2, 1, 0, 0, 2, 0, 1, 1, 0 };
     int n = sizeof(A)/sizeof(A[0]);
  
-    threeWayPartition(A, n - 1);
-    naiveSort(A, n - 1);
+    ThreeWayPartition(A, n - 1);
+    //NaiveSort(A, n - 1);
  
     for (int i = 0; i < n; i++) {
         printf("%d ", A[i]);

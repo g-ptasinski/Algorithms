@@ -23,35 +23,6 @@ void printSubarraysBruteForce(int nums[], int n)
     }
 }
 
-//  Algorithm utilizing multimap
-//  O() complexity
-/*void printSubarraysMultimap(int nums[], int n)
-{
-    unordered_map<int,int> IndexMap;
-
-    //Handle the case when the zerosum subarray starts at 0 element
-    //
-    IndexMap.Insert(pair<int,int>(0,-1));
-
-    int iSum = 0;
-
-    for(int i = 0; i < n; i++)
-    {
-        if(iSum == 0)
-        {
-
-            iSum += nums[i];
-
-            while()
-            {
-
-            }
-        }
-
-        // insert current sum into
-        map.insert(pair<int, int>(sum, i));
-    }
-}*/
  
 int main()
 {
