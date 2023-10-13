@@ -1,6 +1,7 @@
 #include <iostream>
 #include <algorithm>
 #include <cstdlib>
+#include <stdio.h>
 
 int max (int a , int b)
 {
