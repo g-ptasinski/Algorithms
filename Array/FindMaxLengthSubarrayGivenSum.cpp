@@ -8,10 +8,11 @@ void findMaxLenSubarrayMap(int nums[], int n, int S)
     std::unordered_map<int, int> map;
 
     int CurSubarrSum            = 0; 
-    int LongestArrayIndexEnd    = 0;
+    int LongestArrayIndexEnd    = -1;
     int LongestArrayLen         = 0;
 
-    //Map stores combination of starting index and length
+    //Map stores combination of starting index and sum
+    // 
     map[0] = -1;
 
     for( int i =  0; i<n; i++ )
@@ -22,7 +23,7 @@ void findMaxLenSubarrayMap(int nums[], int n, int S)
         //if a sum is seen for a first time, insert this sum into the map
         if( map.find(CurSubarrSum)==map.end() ) 
         {
-            map[i] = CurSubarrSum;
+            map[CurSubarrSum] = i;
         }
 
         //if there is a sum equal to CurrentSum - DesiredSum in the map
@@ -33,11 +34,10 @@ void findMaxLenSubarrayMap(int nums[], int n, int S)
         {
             LongestArrayLen         = i - map[CurSubarrSum - S];
             LongestArrayIndexEnd    = i;
-                std::cout<<CurSubarrSum<<"|"<<LongestArrayIndexEnd - LongestArrayLen +1<< " | " << LongestArrayLen <<std::endl;
         }
     }
 
-    std::cout<<"[ "<< nums[LongestArrayIndexEnd - LongestArrayLen] << " ... "<< nums[LongestArrayIndexEnd]<<" ]"  <<std::endl;
+    std::cout<<"[ "<< nums[LongestArrayIndexEnd - LongestArrayLen + 1 ] << " ... "<< nums[LongestArrayIndexEnd]<<" ]"  <<std::endl;
     std::cout<<LongestArrayIndexEnd - LongestArrayLen +1<< " | " << LongestArrayLen <<std::endl;
 }
 
@@ -93,7 +93,7 @@ int main(void)
     int n = sizeof(nums)/sizeof(nums[0]);
  
     findMaxLenSubarrayNaive(nums, n, iSum);
-    //findMaxLenSubarrayMap(nums, n, iSum);
+    findMaxLenSubarrayMap(nums, n, iSum);
 
     return 0;
 }
