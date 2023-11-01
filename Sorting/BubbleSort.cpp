@@ -7,28 +7,22 @@
 //O(n^2), in-place, stable
 void BubbleSort(std::array<int,10>& A, int n)
 {
-    int counter = 1;
+    bool counter = true;
 
     while(counter)
     { 
-        counter = 0;
-        
+        counter = false;
+
         for(int i = 0 ; i < n ; i++)
         {
             if(A[i+1]<A[i])
             {
              std::swap(A[i], A[i+1]);
-             counter++;   
+             counter = true;   
             }
-            
         }
     }
 }
-
-void BubbleSortRecursive(std::array<int,10>& A, int n, int start_index)
-{
-}
-
 
 
 int main()
@@ -41,8 +35,8 @@ int main()
         std::cout<< i <<  " " ;
     }
     std::cout<<std::endl;
+    
     BubbleSort(A , n);
-
 
     std::cout<<std::endl<<"Post sorting: "<<std::endl;
     for(auto& i : A)
