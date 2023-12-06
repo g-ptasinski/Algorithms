@@ -37,30 +37,35 @@ void ExpoSearch(int A[], int n, int iSum , int low, int high)
 
 void InterpolationSearch(int A[], int n, int iSum , int low, int high)
 {
-    int mid      = low+(high - low)/2;
+    int mid     = 0; 
+    int iLow    = low;
+    int iHight  = high;
 
-    std::cout<<high<<" "<< mid << " "<< low<< std::endl;
 
-    if( A[mid] == iSum )
-    {
-        std::cout << "Sum found at index: "<< mid <<std::endl;
-    }
-    else if (A[low+mid]>iSum)
-    {
-        int iNewHigh = mid;
-        int iNewLow  = low;
-        ExpoSearch(A, n, iSum, iNewLow, iNewHigh);
-    }
-    else
-    {
-        int iNewHigh = high;
-        int iNewLow  = mid;
-        ExpoSearch(A, n, iSum, iNewLow, iNewHigh);    
-    }   
+    while(A[mid] != iSum )
+    {    
+        mid = iLow + ((iSum - A[iLow]) * (iHight - iLow) / (A[iHight] - A[iLow]));
+        
+        std::cout << iHight <<" "<< mid << " "<< iLow << std::endl;
 
-    if(low>=high)
-    {
-        std::cout<<"Sum not found"<<std::endl;
+        if( A[mid] == iSum )
+        {
+            std::cout << "Sum found at index: "<< mid <<std::endl;
+            return;
+        }
+        else if (A[mid]>iSum)
+        {
+            iHight = mid - 1;
+        }
+        else
+        {
+            iLow  = mid+1;
+            std::cout << iHight <<" "<< mid << " "<< iLow << std::endl;
+        }   
+        if(iLow>=iHight)
+        {
+            std::cout<<"Sum not found"<<std::endl;
+        }
     }
 
     return;
@@ -75,6 +80,7 @@ int main(void)
     int iSum = 5; 
 
     ExpoSearch(A, n, iSum , 0, n-1);
+    InterpolationSearch(A, n, iSum , 0, n-1);
 
     return 0;
 }
