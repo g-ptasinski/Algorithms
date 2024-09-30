@@ -22,3 +22,7 @@ CS50, Scalability lecture https://www.youtube.com/watch?v=-W9F__D3oY4
 https://www.reddit.com/r/leetcode/comments/sv82tg/how_do_you_guys_get_good_at_dp/
 
 https://www.youtube.com/watch?v=oBt53YbR9Kk
+
+### Additional, clean code
+
+https://craftbettersoftware.com/p/clean-code-7-tips-to-write-clean?utm_source=unknownews
