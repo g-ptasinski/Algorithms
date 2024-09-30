@@ -5,6 +5,10 @@ https://roadmap.sh/cpp
 
 ## Resources
 
+### BIG O
+
+https://web.mit.edu/16.070/www/lecture/big_o.pdf
+
 
 ### Cool DSA visualizations and cheatsheets
 
