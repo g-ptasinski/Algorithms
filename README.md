@@ -28,6 +28,10 @@ https://www.reddit.com/r/leetcode/comments/sv82tg/how_do_you_guys_get_good_at_dp
 
 https://www.youtube.com/watch?v=oBt53YbR9Kk
 
+### DFS
+
+https://medium.com/@clarachong13/building-intuition-of-depth-first-search-dfs-using-the-call-stack-d10589ce3256
+
 ### Additional, clean code
 
 https://craftbettersoftware.com/p/clean-code-7-tips-to-write-clean?utm_source=unknownews
