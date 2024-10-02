@@ -26,6 +26,10 @@ Caleb's lecture https://www.youtube.com/watch?v=uxskKNcsFLU
 
 CS50, Scalability lecture https://www.youtube.com/watch?v=-W9F__D3oY4
 
+Complete system design repo:
+
+https://github.com/donnemartin/system-design-primer?tab=readme-ov-file#system-design-topics-start-here
+
 ### Dynamic programming stuff
 
 https://www.reddit.com/r/leetcode/comments/sv82tg/how_do_you_guys_get_good_at_dp/
