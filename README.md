@@ -30,6 +30,11 @@ Complete system design repo:
 
 https://github.com/donnemartin/system-design-primer?tab=readme-ov-file#system-design-topics-start-here
 
+https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file
+
+https://blog.algomaster.io/p/scalability
+
+
 ### Dynamic programming stuff
 
 https://www.reddit.com/r/leetcode/comments/sv82tg/how_do_you_guys_get_good_at_dp/
