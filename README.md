@@ -1,7 +1,11 @@
 # Algorithms
 Algorithms exercises
 
+## General
+
 https://roadmap.sh/cpp
+
+https://www.techinterviewhandbook.org/grind75/?hours=10&weeks=6&order=topics
 
 ## Resources
 
