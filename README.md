@@ -34,6 +34,8 @@ https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file
 
 https://blog.algomaster.io/p/scalability
 
+https://www.techinterviewhandbook.org/system-design/
+
 
 ### Dynamic programming stuff
 
