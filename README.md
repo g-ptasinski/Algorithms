@@ -5,6 +5,10 @@ Algorithms exercises
 
 https://roadmap.sh/cpp
 
+https://roadmap.sh/computer-science
+
+https://roadmap.sh/datastructures-and-algorithms
+
 https://www.techinterviewhandbook.org/grind75/?hours=10&weeks=6&order=topics
 
 ## Resources
