@@ -47,6 +47,14 @@ https://www.reddit.com/r/leetcode/comments/sv82tg/how_do_you_guys_get_good_at_dp
 
 https://www.youtube.com/watch?v=oBt53YbR9Kk
 
+## CACHE
+
+### LRU
+
+https://www.geeksforgeeks.org/lru-cache-implementation/
+
+https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU
+
 ### DFS
 
 https://medium.com/@clarachong13/building-intuition-of-depth-first-search-dfs-using-the-call-stack-d10589ce3256
