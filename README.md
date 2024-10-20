@@ -13,9 +13,13 @@ https://www.techinterviewhandbook.org/grind75/?hours=10&weeks=6&order=topics
 
 ## Resources
 
+### C++
+
+[Modern CPP Playlist](https://www.youtube.com/watch?v=LGOgNqkRMs0&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L)
+
 ### BIG O
 
-https://web.mit.edu/16.070/www/lecture/big_o.pdf
+[Big O MIT lecture](https://web.mit.edu/16.070/www/lecture/big_o.pdf)
 
 
 ### Cool DSA visualizations and cheatsheets
@@ -26,7 +30,7 @@ https://visualgo.net/en/list
 
 https://www.youtube.com/playlist?list=PL5q3E8eRUieWtYLmRU3z94-vGRcwKr9tM
 
-Caleb's lecture https://www.youtube.com/watch?v=uxskKNcsFLU
+[Caleb's lecture](https://www.youtube.com/watch?v=uxskKNcsFLU)
 
 CS50, Scalability lecture https://www.youtube.com/watch?v=-W9F__D3oY4
 
