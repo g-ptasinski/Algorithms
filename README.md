@@ -28,22 +28,20 @@ https://visualgo.net/en/list
 
 ### System design tutorials
 
+[Tech interview handbook](https://www.techinterviewhandbook.org/system-design/)
+
 https://www.youtube.com/playlist?list=PL5q3E8eRUieWtYLmRU3z94-vGRcwKr9tM
 
 [Caleb's lecture](https://www.youtube.com/watch?v=uxskKNcsFLU)
 
-CS50, Scalability lecture https://www.youtube.com/watch?v=-W9F__D3oY4
+[CS50, Scalability lecture](https://www.youtube.com/watch?v=-W9F__D3oY4)
+[Algomaster scalability](https://blog.algomaster.io/p/scalability)
 
 Complete system design repo:
 
 https://github.com/donnemartin/system-design-primer?tab=readme-ov-file#system-design-topics-start-here
 
 https://github.com/ashishps1/awesome-system-design-resources?tab=readme-ov-file
-
-https://blog.algomaster.io/p/scalability
-
-https://www.techinterviewhandbook.org/system-design/
-
 
 ### Dynamic programming stuff
 
@@ -61,7 +59,7 @@ https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU
 
 ### DFS
 
-https://medium.com/@clarachong13/building-intuition-of-depth-first-search-dfs-using-the-call-stack-d10589ce3256
+[Depth First Medium](https://medium.com/@clarachong13/building-intuition-of-depth-first-search-dfs-using-the-call-stack-d10589ce3256)
 
 ### Additional, clean code
 
