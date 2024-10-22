@@ -30,7 +30,7 @@ https://visualgo.net/en/list
 
 [Tech interview handbook](https://www.techinterviewhandbook.org/system-design/)
 
-https://www.youtube.com/playlist?list=PL5q3E8eRUieWtYLmRU3z94-vGRcwKr9tM
+[System Design Walkthroughs](https://www.youtube.com/playlist?list=PL5q3E8eRUieWtYLmRU3z94-vGRcwKr9tM)
 
 [Caleb's lecture](https://www.youtube.com/watch?v=uxskKNcsFLU)
 
