@@ -57,10 +57,14 @@ https://www.geeksforgeeks.org/lru-cache-implementation/
 
 https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU
 
+## Search, pathfinding
+
 ### DFS
 
 [Depth First Medium](https://medium.com/@clarachong13/building-intuition-of-depth-first-search-dfs-using-the-call-stack-d10589ce3256)
 
-### Additional, clean code
+## Additional
+
+### Clean code
 
 https://craftbettersoftware.com/p/clean-code-7-tips-to-write-clean?utm_source=unknownews
