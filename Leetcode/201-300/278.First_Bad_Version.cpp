@@ -4,28 +4,24 @@
 class Solution {
 public:
     int firstBadVersion(int n) {
-        int lo = 0;
-        int hi = n;
-        int mid = lo+(hi-lo)/2;
+        int middle;
+        int high = n;
+        int low = 1;
 
-        while(lo<=hi)
+        while(low<high)
         {
-            mid = lo+(hi-lo)/2;
+            middle = low + (high-low)/2;
 
-            if(isBadVersion(mid) && !isBadVersion(mid-1))
+            if(isBadVersion(middle))
             {
-                return mid;
+                high = middle;
             }
-            else if(isBadVersion(mid) && isBadVersion(mid-1) )
+            else if(!isBadVersion(middle))
             {
-                hi = mid -1;
-            }
-            else
-            {
-                lo = mid +1;
+                low = middle + 1;
             }
         }
 
-        return 1;
+        return low;
     }
 };
