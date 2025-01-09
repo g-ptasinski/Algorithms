@@ -1,18 +1,17 @@
 class Solution {
 public:
     int isPrefixOfWord(string sentence, string searchWord) {
-        
-        if(sentence.find(searchWord) != string::npos)
-        {
-            int pos = sentence.find(searchWord);
-            int myCount = 1 + std::count(sentence.begin(), sentence.begin()+pos, ' ');
-            return myCount;        
-        }
-        else
-        {
-            return -1;
-        }
+        stringstream ss(sentence);
+        string s;
 
-        return -1;        
+        for (int i = 1; ss >> s; ++i) 
+        {
+            if (s.find(searchWord) == 0) 
+            {
+                return i;
+            }
+        }
+        
+        return -1;
     }
 };
