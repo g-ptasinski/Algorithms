@@ -11,24 +11,18 @@
  */
 class Solution {
 public:
-    TreeNode* invertChildren(TreeNode* head)
-    {
-        if(head == nullptr){return nullptr;}
-        
-        TreeNode* tmp = head->left;
-        head->left = head->right;
-        head->right = tmp;
-
-        head->left = invertChildren(head->left);
-        head->right= invertChildren(head->right);
-
-        return head;
-    }
-
     TreeNode* invertTree(TreeNode* root) {
-        
-        root = invertChildren(root);
+        if(!root)
+        {
+            return root;
+        }
+        else
+        {
+            TreeNode* tmp = invertTree(root->left);
+            root->left = invertTree(root->right);
+            root->right = tmp;
 
-        return root;
+            return root;
+        }
     }
 };
