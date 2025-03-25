@@ -29,13 +29,17 @@ public:
         isValidSquare(3,0,board)&&isValidSquare(3,3,board)&&isValidSquare(3,6,board)&&
         isValidSquare(6,0,board)&&isValidSquare(6,3,board)&&isValidSquare(6,6,board);
 
-        if(!validSquares){return false;}
+        if(!validSquares)
+        {
+            return false;
+        }
                 
         for(auto item : board)
         {
+            std::set<int> hashset;
+
             for(auto num : item)
             {
-                std::set<int> hashset;
                 if( hashset.find(num) != hashset.end() && num != '.' )
                 {
                     return false;
@@ -55,7 +59,7 @@ public:
             
             for(auto item : board)
             {
-                if(hashset.find(item[i])!=hashset.end())
+                if(hashset.find(item[i])!=hashset.end() && item[i]!='.')
                 {
                     return false;
                 }
