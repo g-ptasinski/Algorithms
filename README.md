@@ -11,6 +11,8 @@ https://roadmap.sh/datastructures-and-algorithms
 
 https://www.techinterviewhandbook.org/grind75/?hours=10&weeks=6&order=topics
 
+## Standards
+
 https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code
 
 ## Resources
