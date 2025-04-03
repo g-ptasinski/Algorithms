@@ -9,9 +9,10 @@ public:
         for(auto& item : diffs) // calculate max element to the left, and then try to get the difference
         {
             maxElem = max(maxElem, item);
-            //if max element is bigger than current difference is 0
+
             int tmp = maxElem - item; 
             if(tmp < 0){tmp = 0;}
+            
             item = tmp;
         }
 
@@ -19,7 +20,7 @@ public:
 
         int maxRight = nums[nums.size()-1];
 
-        for(int i = nums.size()-2; i>=0; --i)
+        for(int i = nums.size()-2; i>=0; --i) //calculate max element to the right
         {
             maxRight = max(maxRight, nums[i+1]);
             maxright[i] = maxRight;
@@ -30,7 +31,7 @@ public:
 
         for(int i = 1; i<maxright.size(); ++i)
         {
-            maxVal = max(maxVal, (long long)maxright[i]*diffs[i]);
+            maxVal = max(maxVal, (long long)maxright[i]*diffs[i]); //calculate multiplication of max right and max diff, so maximum product
         }
 
         return maxVal;
