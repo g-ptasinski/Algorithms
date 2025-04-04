@@ -25,6 +25,10 @@ https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Criti
 
 [Big O MIT lecture](https://web.mit.edu/16.070/www/lecture/big_o.pdf)
 
+### GENERAL, ORG
+
+https://dl.ebooksworld.ir/motoman/Working.Effectively.with.Legacy.Code..www.EBooksWorld.ir.pdf
+
 
 ### Cool DSA visualizations and cheatsheets
 
