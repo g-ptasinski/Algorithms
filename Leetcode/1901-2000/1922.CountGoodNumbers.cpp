@@ -22,8 +22,6 @@ public:
 
     int countGoodNumbers(long long n) {
 
-        long long ans = (myPowMod(4,n/2)*myPowMod(5,(n+1)/2))%kMod;
-
-        return static_cast<int>(ans);
+        return static_cast<int>((myPowMod(4,n/2)*myPowMod(5,(n+1)/2))%kMod);
     }
 };
