@@ -1,32 +1,28 @@
 class Solution {
 public:
     double myPow(double x, int n) {
+        long long _n = n;
 
-        if(n<0)
+        if(n < 0)
         {
-            if(n == INT_MIN)
+            _n = abs(_n);
+        }
+
+        double result = 1;
+
+        while(_n > 0)
+        {
+            if(_n % 2 == 1)
             {
-                ++n;
-                n *= -1;
-                x = 1/x;
-                return myPow(x*x, n/2);
+                result = (result * x);
             }
-
-            return 1/myPow(x, -n);
+                    
+            x = (x * x);
+            _n = _n/2;
         }
 
-        if(n == 0 || x == 1)    {return 1;}
-        if(x == 0)              {return 0;}
+        if(n<0){return 1/result;}
 
-        double ans = myPow(x, n/2);
-
-        if(n%2 == 0)
-        {
-            return ans*ans;
-        }
-        else
-        {
-            return ans*ans*x;
-        }
+        return result;
     }
 };
