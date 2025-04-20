@@ -19,11 +19,7 @@ public:
 
         for(auto item : hash)
         {
-            if(item.first == 0)
-            {
-                minRabbits += item.second;
-            }
-            else if(item.second <= item.first+1)
+            if(item.second <= item.first+1)
             {
                 minRabbits += item.first+1;
             }
