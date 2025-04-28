@@ -2,6 +2,7 @@ class Solution {
 public:
     int countSubarrays(vector<int>& nums) {
         int counter = 0;
+        
         int left = 0;
         int mid = 1;
         int right = 2;
