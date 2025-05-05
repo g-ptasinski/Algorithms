@@ -32,3 +32,25 @@ public:
        return counter;
     }
 };
+
+
+//FASTER ONE
+
+class Solution {
+public:
+    int numEquivDominoPairs(vector<vector<int>>& dominoes) {
+        int count[100] = {0};
+        int numOfPairs = 0;
+      
+        for (auto& domino : dominoes) {
+
+            int normalizedValue = domino[0] < domino[1] 
+                                  ? domino[0] * 10 + domino[1] 
+                                  : domino[1] * 10 + domino[0];
+          
+            numOfPairs += count[normalizedValue]++;
+        }
+      
+        return numOfPairs;
+    }
+};
