@@ -73,6 +73,8 @@ https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU
 
 ## Additional
 
+[Linux tools](https://www.youtube.com/watch?v=32O0a6qCQaQ)
+
 ### Clean code
 
 https://craftbettersoftware.com/p/clean-code-7-tips-to-write-clean?utm_source=unknownews
