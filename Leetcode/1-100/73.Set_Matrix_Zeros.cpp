@@ -1,58 +1,39 @@
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
-        vector<bool> hashcolumns;
-        vector<bool> hashrows;
 
         int i = 0;
         int j = 0;
 
+        std::unordered_set<int> rows;
+        std::unordered_set<int> cols;
+
+        for(auto item : matrix)
+        {
+            for(auto num : item)
+            {
+                if(num == 0)
+                {
+                    rows.insert(i);
+                    cols.insert(j);
+                }
+
+                ++j;
+            }
+
+            j = 0;
+            i++;
+        }
+
         for(i = 0; i<matrix.size(); ++i)
         {
-            hashrows.push_back(false);
-        }
-        
-        for(i = 0; i<matrix[0].size(); ++i)
-        {
-            hashcolumns.push_back(false);
-        }
-
-        i=0; 
-        j=0;
-
-        for(auto row : matrix)
-        {
-            for(auto element : row)
+            for(j = 0; j<matrix[0].size(); ++j)
             {
-                if(element == 0)
+                if(rows.find(i)!=rows.end() || cols.find(j)!=cols.end())
                 {
-                    hashcolumns[i] = true;
-                    hashrows[j] = true;
+                    matrix[i][j] = 0;
                 }
-
-                i++;
             }
-
-            i=0;
-            j++;
-        }
-
-        i=0; j=0;
-
-       for(auto& row : matrix)
-        {
-            for(auto& element : row)
-            {
-                if(hashcolumns[i] || hashrows[j])
-                {
-                    element = 0;
-                }
-
-                i++;
-            }
-
-            i=0;
-            j++;
         }
     }
 };
